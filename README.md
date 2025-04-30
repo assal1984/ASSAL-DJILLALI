@@ -1,4 +1,4 @@
-# ASSAL-DJILLALI
+#Weighted Probability Modeling for Bid Optimization Across Construction Work Items
 # Load required libraries
 library(writexl)
 library(readxl)
@@ -476,7 +476,7 @@ fit_result$optim$bestmem
 coef<-fit_result$optim$bestmem[1:10]
 
 
-
+#----------------#الرسومات
 Suggested_MarkUp<- coef* Wei_Ela
 plot(Wei_Ela, coef, col = "red", lwd = 3,type="p")
 abline(v=1,lty=2,lwd=2,col=1)
@@ -536,5 +536,7 @@ bidder = bidder,
 all_params = all_parameters,
 quantities = new_quantities
 )
+
+
 
 
